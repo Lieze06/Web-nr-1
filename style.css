@@ -69,3 +69,18 @@ next-page{
 .next-page:hover{
     transform:scale(1.1);
 }
+.next-page{
+    position:fixed;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    color:white;
+    text-decoration:none;
+    font-size:1.8rem;
+    z-index:100;
+    transition:0.3s;
+}
+
+.next-page:hover{
+    transform:translateX(-50%) scale(1.1);
+}
