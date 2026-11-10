@@ -53,3 +53,19 @@ a {
   min-height: 100vh;
   box-sizing: border-box;
 }
+next-page{
+    display:block;
+    text-align:center;
+    margin-top:60px;
+    margin-bottom:40px;
+    color:red;
+    font-size:2rem;
+    text-decoration:none;
+    font-style:italic;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.next-page:hover{
+    transform:scale(1.1);
+}
