@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Editie 02</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#d8e9f7;
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+h1{
+    text-align:center;
+    color:red;
+    font-size:6vw;
+    font-style:italic;
+    margin-top:40px;
+}
+
+.container{
+    position:relative;
+    width:80%;
+    margin:auto;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.word{
+    position:absolute;
+    color:red;
+    font-weight:bold;
+    font-style:italic;
+    font-size:4vw;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.word:hover{
+    transform:scale(1.1);
+}
+
+.gezicht{
+    top:20%;
+    right:-10%;
+}
+
+.peper{
+    bottom:10%;
+    left:-10%;
+}
+
+.voet{
+    bottom:10%;
+    right:-5%;
+}
+
+.next{
+    display:block;
+    text-align:center;
+    margin:80px 0;
+    color:black;
+    text-decoration:none;
+    font-size:1.2rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>WHAT DO YOU SEE?</h1>
+
+<div class="container">
+
+<img id="cloud" src="PEPER.jpg">
+
+<div class="word gezicht" onclick="toonGezicht()">GEZICHT</div>
+
+<div class="word peper" onclick="toonPeper()">PEPER</div>
+
+<div class="word voet" onclick="toonVoet()">VOET</div>
+
+</div>
+
+<a class="next" href="index.html">
+← terug naar editie 01
+</a>
+
+<script>
+
+function toonPeper(){
+document.getElementById("cloud").src="PEPER.jpg";
+}
+
+function toonGezicht(){
+document.getElementById("cloud").src="Gezichten.jpg";
+}
+
+function toonVoet(){
+document.getElementById("cloud").src="VOET.jpg";
+}
+
+</script>
+
+</body>
+</html>
